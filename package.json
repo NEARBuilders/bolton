@@ -1,0 +1,42 @@
+{
+  "name": "bolton-bot",
+  "version": "1.0.0",
+  "description": "Bolton Bot",
+  "scripts": {
+    "dev": "tsx watch --watch-path=./src src/bot.ts",
+    "build": "tsdown",
+    "typecheck": "tsc --noEmit",
+    "start": "node dist/bot.mjs"
+  },
+  "dependencies": {
+    "@ai-sdk/anthropic": "^3.0.37",
+    "@ai-sdk/google": "^3.0.21",
+    "@ai-sdk/openai": "^3.0.25",
+    "@ai-sdk/openai-compatible": "^2.0.27",
+    "@ai-sdk/xai": "^3.0.47",
+    "@defuse-protocol/intents-sdk": "^0.49.0",
+    "@defuse-protocol/internal-utils": "0.26.0",
+    "@defuse-protocol/one-click-sdk-typescript": "^0.1.15",
+    "@scure/base": "^2.0.0",
+    "@thames/monads": "^0.7.0",
+    "ai": "^6.0.73",
+    "borsh": "^2.0.0",
+    "borsher": "^4.0.0",
+    "bs58": "^6.0.0",
+    "dotenv": "^16.4.7",
+    "fuse.js": "^7.1.0",
+    "grammy": "^1.39.3",
+    "js-sha256": "^0.11.1",
+    "near-api-js": "^6.1.0",
+    "node-cron": "^4.2.1",
+    "tweetnacl": "^1.0.3",
+    "viem": "^2.37.8",
+    "zod": "^4.0.14"
+  },
+  "devDependencies": {
+    "@types/node": "^25.0.10",
+    "tsdown": "^0.20.1",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  }
+}
